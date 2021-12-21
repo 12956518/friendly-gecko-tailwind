@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking Cart</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="img/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="stylesheet" href="/build/index.css" />
+  
+  	<link id="external-css" rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap" media="all">
+</head>
+
+  <body class="font-sans dark:bg-gray-900 dark:text-gray-200">
+      <header class="bg-primary dark:bg-transparent">
+          <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Top">
+            <div class="w-full py-6 flex items-center justify-between border-b border-primary-200 dark:border-primary-700 lg:border-none">
+              <div class="flex items-center">
+                <a href="./index.html">
+                  <span class="sr-only">Gecko</span>
+                  <img class="h-10 w-auto" src="./img/logo-light.svg" alt="">
+                </a>
+                <div class="hidden ml-10 space-x-8 lg:block">
+                  <a href="#" class="text-base font-medium text-white hover:text-primary-50" key="Categories">
+                    Categories
+                  </a>
+        
+                  <a href="#" class="text-base font-medium text-white hover:text-primary-50" key="Search">
+                    Search
+                  </a>
+        
+                  <a href="./cart-empty.html" class="text-base font-medium text-white hover:text-primary-50" key="Cart">
+                    Cart
+                  </a>
+        
+                  <a href="#" class="text-base font-medium text-white hover:text-primary-50" key="Profile">
+                    Profile
+                  </a>
+                </div>
+              </div>
+              <div class="ml-10 space-x-1.5 md:space-x-4">
+                <a href="#" class="inline-block bg-primary-500 py-2 px-4 border border-transparent rounded-md text-base font-medium text-white hover:bg-opacity-75">Login</a>
+                <a href="#" class="inline-block bg-white py-2 px-4 border border-transparent rounded-md text-base font-medium text-primary-600 hover:bg-primary-50">Join</a>
+              </div>
+            </div>
+            <div class="py-4 flex flex-wrap justify-center space-x-6 hidden">
+                <a href="#" class="text-base font-medium hover:text-primary-50" key="Categories">
+                    Categories
+                  </a>
+        
+                  <a href="#" class="text-base font-medium hover:text-primary-50" key="Search">
+                    Search
+                  </a>
+        
+                  <a href="#" class="text-base font-medium hover:text-primary-50" key="Cart">
+                    Cart
+                  </a>
+        
+                  <a href="#" class="text-base font-medium hover:text-primary-50" key="Profile">
+                    Profile
+                  </a>
+            </div>
+          </nav>
+        </header>
+        
+            <div
+            class="flex flex-col justify-between w-full pt-4 space-y-10 px-4 lg:px-10"
+          >
+          <main>
+            <div class=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-6">
+              <div class="w-full mx-auto pt-16">
+                <h1 class="text-headline-4 font-extrabold tracking-tight md:text-headline-3">
+                  Booking Cart
+                </h1>
+
+                <form class="mt-12 lg:flex">
+                  <section class="w-full" aria-labelledby="cart-heading">
+                    <h2 id="cart-heading" class="sr-only">
+                      0 items in your booking cart
+                    </h2>
+
+                    <ul
+                      role="list"
+                      class="border-t border-b border-gray-200 divide-y divide-gray-200"
+                    >
+                      <li class="flex py-6 sm:py-10">
+                       <!-- This example requires Tailwind CSS v2.0+ -->
+<div class="mx-auto w-full">
+  <h2 class="text-body-lg font-medium">Your cart is empty</h2>
+  <p class="mt-1 text-body text-gray-500">Start your booking by choosing from the categories below.</p>
+  <ul role="list" class="mt-6 border-t border-b border-gray-200 divide-y divide-gray-200">
+    <li>
+      <div class="relative group py-4 flex items-start space-x-3">
+        <div class="flex-shrink-0">
+          <span class="inline-flex items-center justify-center h-10 w-10 md:h-20 md:w-20 rounded-lg bg-sky-500">
+            <!-- Heroicon name: outline/speakerphone -->
+            <svg class="h-7 w-7 md:h-12 md:w:12 text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 60 60" stroke="none" aria-hidden="true">
+<path d="M30,35a7,7,0,1,0,7,7A7.008,7.008,0,0,0,30,35Zm0,11a4,4,0,1,1,4-4A4,4,0,0,1,30,46Z"/><path d="M41,33a3,3,0,0,0-3-3,2.973,2.973,0,0,0-2.543,1.425,1,1,0,0,1-1.241.408,11.129,11.129,0,0,0-8.432,0,1,1,0,0,1-1.241-.408A2.973,2.973,0,0,0,22,30a3,3,0,0,0-3,3,2.972,2.972,0,0,0,1.137,2.354,1,1,0,0,1,.255,1.275,11.058,11.058,0,0,0,0,10.742,1,1,0,0,1-.255,1.275A2.972,2.972,0,0,0,19,51a3,3,0,0,0,3,3,2.973,2.973,0,0,0,2.543-1.425,1,1,0,0,1,1.241-.408,11.129,11.129,0,0,0,8.432,0,1,1,0,0,1,1.241.408A2.973,2.973,0,0,0,38,54a3,3,0,0,0,3-3,2.972,2.972,0,0,0-1.137-2.354,1,1,0,0,1-.255-1.275,11.058,11.058,0,0,0,0-10.742,1,1,0,0,1,.255-1.275A2.972,2.972,0,0,0,41,33ZM22,32a1,1,0,1,1-1,1A1,1,0,0,1,22,32Zm0,20a1,1,0,1,1,1-1A1,1,0,0,1,22,52Zm16,0a1,1,0,1,1,1-1A1,1,0,0,1,38,52Zm-8-1a9,9,0,1,1,9-9A9.01,9.01,0,0,1,30,51Zm8-17a1,1,0,1,1,1-1A1,1,0,0,1,38,34Z"/><circle cx="30" cy="42" r="2"/><circle cx="30" cy="14" r="3"/><path d="M45,2H15a4,4,0,0,0-4,4V54a4,4,0,0,0,4,4H45a4,4,0,0,0,4-4V6A4,4,0,0,0,45,2ZM14,55a1,1,0,1,1,1-1A1,1,0,0,1,14,55ZM14,7a1,1,0,1,1,1-1A1,1,0,0,1,14,7Zm6,7a10.026,10.026,0,0,1,.165-1.8A4.995,4.995,0,0,1,24,4a4.87,4.87,0,0,1,2.457.652,10,10,0,0,1,7.086,0A4.87,4.87,0,0,1,36,4a4.995,4.995,0,0,1,3.835,8.2,9.89,9.89,0,0,1,0,3.6A4.995,4.995,0,0,1,36,24a4.87,4.87,0,0,1-2.457-.652,9.988,9.988,0,0,1-7.086,0A4.87,4.87,0,0,1,24,24a4.995,4.995,0,0,1-3.835-8.2A10.026,10.026,0,0,1,20,14ZM43,42a13.029,13.029,0,0,1-1.283,5.649,5,5,0,1,1-7.473,6.645,13.166,13.166,0,0,1-8.488,0,5,5,0,1,1-7.473-6.645,13.078,13.078,0,0,1,0-11.3,5,5,0,1,1,7.473-6.645,13.166,13.166,0,0,1,8.488,0,5,5,0,1,1,7.473,6.645A13.029,13.029,0,0,1,43,42Zm3,13a1,1,0,1,1,1-1A1,1,0,0,1,46,55ZM46,7a1,1,0,1,1,1-1A1,1,0,0,1,46,7Z"/><path d="M21,19a3,3,0,0,0,3,3,2.86,2.86,0,0,0,1.745-.577,1,1,0,0,1,1.015-.115,7.968,7.968,0,0,0,6.48,0,1,1,0,0,1,1.015.115A2.86,2.86,0,0,0,36,22a3,3,0,0,0,2.057-5.179,1,1,0,0,1-.28-.953,7.935,7.935,0,0,0,0-3.736,1,1,0,0,1,.28-.953A3,3,0,0,0,36,6a2.854,2.854,0,0,0-1.745.577,1,1,0,0,1-1.015.114,7.976,7.976,0,0,0-6.48,0,1,1,0,0,1-1.015-.114A2.854,2.854,0,0,0,24,6a3,3,0,0,0-2.057,5.179,1,1,0,0,1,.28.953,7.935,7.935,0,0,0,0,3.736,1,1,0,0,1-.28.953A3.005,3.005,0,0,0,21,19Zm15,1a1,1,0,1,1,1-1A1,1,0,0,1,36,20ZM36,8a1,1,0,1,1-1,1A1,1,0,0,1,36,8ZM30,9a5,5,0,1,1-5,5A5.006,5.006,0,0,1,30,9ZM24,8a1,1,0,1,1-1,1A1,1,0,0,1,24,8Zm0,10a1,1,0,1,1-1,1A1,1,0,0,1,24,18Z"/>
+              </svg>
+          </span>
+        </div>
+        <div class="min-w-0 flex-1">
+          <div class="text-body font-medium md:text-body-md">
+            <a href="#">
+              <span class="absolute inset-0" aria-hidden="true"></span>
+              Speakers
+            </a>
+          </div>
+          <p class="text-sm text-gray-500 md:text-body">Get the sound system needed for your event.</p>
+        </div>
+        <div class="flex-shrink-0 self-center">
+          <!-- Heroicon name: solid/chevron-right -->
+          <svg class="h-5 w-5 text-gray-400 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+          </svg>
+        </div>
+      </div>
+    </li>
+
+    <li>
+      <div class="relative group py-4 flex items-start space-x-3">
+        <div class="flex-shrink-0">
+          <span class="inline-flex items-center justify-center h-10 w-10 md:h-20 md:w-20 rounded-lg bg-purple-500">
+            <!-- Heroicon name: outline/terminal -->
+            <svg class="h-7 w-7 md:h-12 md:w:12 text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512" stroke="none" aria-hidden="true">
+              <g xmlns="http://www.w3.org/2000/svg" id="XMLID_634_"><path id="XMLID_651_" d="m488.792 43.703h23.208v-30h-512v30h23.698v33.19l10.413 24.145-26.624 12.563 32.567 69.025c-4.068 12.548-3.234 25.955 2.42 37.94l10.374 21.985 93.453-44.094-10.374-21.985c-5.654-11.984-15.471-21.153-27.743-25.991l-32.567-69.026-14.359 6.775-7.56-17.53v-26.997h187.547v35.593h-22.605l-.089 64.293c-9.056 9.602-14.047 22.083-14.065 35.343l-.031 23.191h103.333l.032-23.052c.018-13.637-5.286-26.056-13.936-35.311l.088-64.464h-22.728v-35.593h187.547v26.997l-7.56 17.53-14.359-6.775-32.582 69.055c-11.789 4.661-21.907 13.619-27.73 25.961l-10.374 21.987 93.454 44.094 10.375-21.987c5.823-12.342 6.304-25.846 2.406-37.908l32.581-69.055-26.624-12.562 10.413-24.145v-33.192z"/><path id="XMLID_652_" d="m256.245 334.893 53.303-79.878-3.454-22.892h-101.16l-3.147 21.161z"/><path id="XMLID_653_" d="m409.205 251.927-11.713 24.108-26.984-13.109 11.564-23.802-34.968-16.499-9.896 14.633 39.386 261.039h27.893l39.155-230.122z"/><path id="XMLID_654_" d="m238.212 361.916-42.998-64.435-24.663 165.83z"/><path id="XMLID_655_" d="m174.1 235.509-8.714-12.884-34.937 16.484 12.113 24.786-26.954 13.171-12.293-25.155-34.467 16.263 39.154 230.123h27.015z"/><path id="XMLID_656_" d="m256.245 388.94-72.975 109.357h145.949z"/><path id="XMLID_657_" d="m274.277 361.916 66.417 99.53-24.496-162.351z"/></g>            </svg>
+          </span>
+        </div>
+        <div class="min-w-0 flex-1">
+          <div class="text-body font-medium md:text-body-md">
+            <a href="#">
+              <span class="absolute inset-0" aria-hidden="true"></span>
+              Party Lights
+            </a>
+          </div>
+          <p class="text-caption text-gray-500 md:text-body">Set the mood with lighting and FX.</p>
+        </div>
+        <div class="flex-shrink-0 self-center">
+          <!-- Heroicon name: solid/chevron-right -->
+          <svg class="h-5 w-5 text-gray-400 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+          </svg>
+        </div>
+      </div>
+    </li>
+
+    <li>
+      <div class="relative group py-4 flex items-start space-x-3">
+        <div class="flex-shrink-0">
+          <span class="inline-flex items-center justify-center h-10 w-10 md:h-20 md:w-20 rounded-lg bg-primary-600">
+            <!-- Heroicon name: outline/calendar -->
+            <svg class="h-7 w-7 md:h-12 md:w:12 text-white" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 128 128" stroke="none" aria-hidden="true">
+              <circle cx="98.498" cy="63.597" r="5.217"/><circle cx="29.502" cy="63.597" r="5.217"/><path d="m121.429 32.422h-45.515v-3.3a3.3 3.3 0 0 0 -6.593 0v3.3h-10.642v-3.3a3.3 3.3 0 0 0 -6.593 0v3.3h-45.515a4.055 4.055 0 0 0 -4.055 4.055v74.023a4.054 4.054 0 0 0 4.055 4.055h40.511a3.041 3.041 0 0 0 2.6-1.462l1.772-2.916a3.04 3.04 0 0 1 2.6-1.462h19.9a3.04 3.04 0 0 1 2.6 1.462l1.772 2.916a3.041 3.041 0 0 0 2.6 1.462h40.511a4.054 4.054 0 0 0 4.055-4.055v-74.023a4.055 4.055 0 0 0 -4.063-4.055zm-107.016 70.408a2.6 2.6 0 1 1 2.6-2.6 2.6 2.6 0 0 1 -2.6 2.6zm0-10.719a2.6 2.6 0 1 1 2.6-2.6 2.6 2.6 0 0 1 -2.6 2.6zm17.687 5.918a1.76 1.76 0 0 1 -1.76 1.76h-4.68a1.76 1.76 0 0 1 -1.76-1.76v-4.675a1.76 1.76 0 0 1 1.76-1.76h4.676a1.76 1.76 0 0 1 1.76 1.76zm15.094 0a1.76 1.76 0 0 1 -1.76 1.76h-4.679a1.76 1.76 0 0 1 -1.76-1.76v-4.675a1.76 1.76 0 0 1 1.76-1.76h4.675a1.76 1.76 0 0 1 1.76 1.76zm-17.694-15.042a19.39 19.39 0 1 1 19.392-19.387 19.39 19.39 0 0 1 -19.392 19.387zm31.346-16.348a3.154 3.154 0 1 1 3.154 3.153 3.154 3.154 0 0 1 -3.154-3.153zm3.169 9.153a3.154 3.154 0 1 1 -3.154 3.154 3.154 3.154 0 0 1 3.154-3.154zm.014 18.614a3.154 3.154 0 1 1 3.153-3.153 3.153 3.153 0 0 1 -3.153 3.153zm-.029-39.933a5.957 5.957 0 1 1 5.956-5.956 5.956 5.956 0 0 1 -5.956 5.956zm25 43.556a1.76 1.76 0 0 1 -1.76 1.76h-4.67a1.76 1.76 0 0 1 -1.76-1.76v-4.675a1.76 1.76 0 0 1 1.76-1.76h4.675a1.76 1.76 0 0 1 1.76 1.76zm15.1 0a1.76 1.76 0 0 1 -1.76 1.76h-4.676a1.76 1.76 0 0 1 -1.76-1.76v-4.675a1.76 1.76 0 0 1 1.76-1.76h4.676a1.76 1.76 0 0 1 1.76 1.76zm9.487 4.8a2.6 2.6 0 1 1 2.6-2.6 2.6 2.6 0 0 1 -2.6 2.601zm0-10.719a2.6 2.6 0 1 1 2.6-2.6 2.6 2.6 0 0 1 -2.6 2.601zm-15.087-9.123a19.39 19.39 0 1 1 19.39-19.39 19.39 19.39 0 0 1 -19.39 19.39z"/>            </svg>
+          </span>
+        </div>
+        <div class="min-w-0 flex-1">
+          <div class="text-body font-medium md:text-body-md">
+            <a href="#">
+              <span class="absolute inset-0" aria-hidden="true"></span>
+              DJ Controllers
+            </a>
+          </div>
+          <p class="text-sm text-gray-500 md:text-body">Ditch the aux cord and party like a pro.</p>
+        </div>
+        <div class="flex-shrink-0 self-center">
+          <!-- Heroicon name: solid/chevron-right -->
+          <svg class="h-5 w-5 text-gray-400 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+          </svg>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <div class="mt-6 flex">
+    <a href="#" class="text-sm font-medium text-primary-600 hover:text-sky-500">Or search for something else<span aria-hidden="true"> &rarr;</span></a>
+  </div>
+</div>
+
+                      </li>
+
+                   
+                    </ul>
+                  </section>
+
+                  <!-- Order summary -->
+                  <section
+                    aria-labelledby="summary-heading"
+                    class="mt-10 lg:ml-10 md:pl-6 w-full max-w-4/12 lg:max-w-1/5"
+                  >
+                    <div class="bg-gray-50 dark:bg-gray-800 rounded-lg px-4 py-6 sm:p-6 lg:p-8">
+                      <h2 id="summary-heading" class="sr-only">
+                        Order summary
+                      </h2>
+
+                      <div class="flow-root">
+                        <dl class="-my-4 text-sm divide-y divide-gray-200">
+                          <div class="py-4 flex items-center justify-between">
+                            <dt class="text-gray-600">
+                              Subtotal
+                            </dt>
+                            <dd class="font-medium">
+                              -
+                            </dd>
+                          </div>
+                          <div class="py-4 flex items-center justify-between">
+                            <dt class="text-gray-600">
+                              Bond
+                            </dt>
+                            <dd class="font-medium">
+                              -
+                            </dd>
+                          </div>
+
+                          <div class="py-4 flex items-center justify-between">
+                            <dt class="text-base font-medium">
+                              Order total
+                            </dt>
+                            <dd class="text-base font-medium">
+                              -
+                            </dd>
+                          </div>
+                        </dl>
+                      </div>
+                    </div>
+                    <div class="mt-10">
+                      <div
+                        class="w-full bg-gray-600 border border-transparent rounded-md shadow-sm py-3 px-4 text-base font-medium text-center text-white cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50"
+                      >
+                        Checkout
+                    </div>
+                    </div>
+
+                    <div class="mt-6 text-sm text-center text-gray-500">
+                      <p>
+                        or
+                        <a
+                          href="#"
+                          class="text-primary-600 font-medium hover:text-primary-500"
+                          >Continue Browsing<span aria-hidden="true">
+                            &rarr;</span
+                          ></a
+                        >
+                      </p>
+                    </div>
+                  </section>
+                </form>
+              </div>
+            </div>
+
+          </main>
+
+          <footer aria-labelledby="footer-heading" class="">
+            <h2 id="footer-heading" class="sr-only">Footer</h2>
+            <div class="max-w-7xl mx-auto mt-10 sm:px-6 lg:px-8">
+              <div class="border-t border-gray-200 py-20">
+                
+                  <!-- Newsletter section -->
+                  <div
+                    class="mt-12 md:mt-0 flex flex-col items-center"
+                  >
+                    <h3
+                      class="text-headline-4 mb-4 font-bold text-center"
+                    >
+                      Geck the latest news <br />
+                      about Gecko!
+                    </h3>
+
+                    <form class="mt-2 flex w-full sm:max-w-md">
+                      <label for="email-address" class="sr-only"
+                        >Email address</label
+                      >
+                      <input
+                        id="email-address"
+                        type="text"
+                        autocomplete="email"
+                        required
+                        class="appearance-none min-w-0 w-full bg-white border border-gray-300 rounded-md shadow-sm py-2 px-4 text-base placeholder-gray-500 focus:outline-none focus:border-primary-500 focus:ring-1 focus:ring-primary-500"
+                      />
+                      <div class="ml-4 flex-shrink-0">
+                        <button
+                          type="submit"
+                          class="w-full bg-primary-500 border border-transparent rounded-md shadow-sm py-2 px-4 flex items-center justify-center text-base font-semibold text-white hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
+                        >
+                          Subscribe
+                        </button>
+                      </div>
+                    </form>
+                    <p class="mt-6 text-sm text-gray-500">
+                      Subscribe to our newsletter for the latest updates.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="border-t border-gray-100 py-10 text-center">
+                <p class="text-sm text-gray-500">
+                  &copy; 2021 Gecko. All rights reserved.
+                </p>
+              </div>
+            </div>
+          </footer>
+        
+    </div>
+    <div
+      class="fixed left-auto flex items-center justify-center mx-auto right-4 bottom-1 md:bottom-1 md:right-6"
+      id="toggles"
+    >
+      <div class="relative flex items-center justify-end mx-auto space-x-2">
+        <span class="text-xs font-extralight">Light </span>
+        <div
+          class="relative w-12 h-6 my-5 rounded-full font-bold shadow-sm cursor-pointer bg-primary-500"
+        >
+          <input
+            aria-label="toggle-mode"
+            checked
+            type="checkbox"
+            name="toggle-mode"
+            id="toggle-mode"
+            class="absolute w-4 h-4 m-1 bg-white rounded-full shadow-sm appearance-none cursor-pointer focus:outline-none focus:bg-primary-500 focus:ring-1 focus:ring-offset-1 focus:ring-primary-700 checkbox"
+          />
+          <label
+            for="toggle-mode"
+            class="block w-12 h-6 overflow-hidden bg-gray-300 rounded-full cursor-pointer toggle-label dark:bg-gray-700"
+          ></label>
+        </div>
+        <!-- Code block ends -->
+        <style>
+          .checkbox:checked {
+            /* Apply class right-0*/
+            right: 0;
+          }
+
+          .checkbox:checked + .toggle-label {
+            /* Apply class bg-primary */
+            background-color: #2e86ff;
+          }
+        </style>
+        <span class="text-xs font-semibold">Dark</span>
+      </div>
+    </div>
+
+    <script>
+      const checkbox = document.querySelector("#toggle-mode");
+      const html = document.querySelector("html");
+      const toggles = document.querySelector("#toggles");
+
+      const toggleDarkMode = function () {
+        checkbox.checked
+          ? html.classList.add("dark")
+          : html.classList.remove("dark");
+      };
+
+      //calling the function directly
+
+      toggleDarkMode();
+      toggles.addEventListener("click", toggleDarkMode);
+    </script>
+  </body>
+</html>

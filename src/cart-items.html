@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking Cart</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="img/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="stylesheet" href="/build/index.css" />
+
+    <link
+      id="external-css"
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap"
+      media="all"
+    />
+  	<link id="external-css" rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap" media="all">
+</head>
+
+  <body class="font-sans dark:bg-slate-900 dark:text-slate-200">
+    <header class="bg-primary dark:bg-primary-700 shadow-lg">
+      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Top">
+        <div
+          class="w-full py-6 flex items-center justify-between border-b border-primary-200 dark:border-primary-700 lg:border-none"
+        >
+          <div class="flex items-center">
+            <a href="#">
+              <span class="sr-only">Gecko</span>
+              <img class="h-10 w-auto" src="./img/logo-light.svg" alt="" />
+            </a>
+            <div class="hidden ml-10 space-x-8 lg:block">
+              <a
+                href="./cart-items.html"
+                class="text-base font-medium text-white hover:text-primary-50"
+                key="Categories"
+              >
+                Cart
+              </a>
+
+              <a
+                href="./cart-empty.html"
+                class="text-base font-medium text-white hover:text-primary-50"
+                key="Search"
+              >
+                Cart (empty)
+              </a>
+
+              <a
+                href="./checkout.html"
+                class="text-base font-medium text-white hover:text-primary-50"
+                key="Profile"
+              >
+                Checkout
+              </a>
+            </div>
+          </div>
+          <div class="ml-10 space-x-1.5 md:space-x-2">
+            <a
+              href="#"
+              class="inline-block bg-primary-500 py-2 px-3 border border-transparent rounded-full text-button-sm font-semibold text-white md:text-button md:px-4"
+              >Login</a
+            >
+            <a
+              href="#"
+              class="inline-block bg-white py-2 px-3 border border-transparent rounded-full text-button-sm font-semibold text-primary-600 md:text-button md:px-4"
+              >Join</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div
+      class="flex flex-col justify-between w-full pt-4 space-y-10 px-4 lg:px-10"
+    >
+      <main>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-6">
+          <div class="w-full mx-auto pt-16">
+            <h1
+              class="text-headline-4 font-extrabold tracking-tight md:text-headline-3"
+            >
+              Booking Cart
+            </h1>
+
+            <form class="mt-12 lg:flex">
+              <section class="w-full" aria-labelledby="cart-heading">
+                <h2 id="cart-heading" class="sr-only">
+                  0 items in your booking cart
+                </h2>
+
+                <ul
+                  role="list"
+                  class="border-t border-b border-slate-200 divide-y divide-slate-200"
+                >
+                  <li class="flex py-6 sm:py-10">
+                    <div class="flex-shrink-0">
+                      <img
+                        src="https://assets.website-files.com/602b03ecd6fa21ad1fd80d02/608798881a3ce0468ddcb9f1_46541promo-p-500.jpeg"
+                        alt="JBL Partybox 300 - Speakers."
+                        class="w-24 h-24 rounded-lg object-center object-cover sm:w-32 sm:h-32"
+                      />
+                    </div>
+
+                    <div
+                      class="relative ml-4 flex-1 flex flex-col justify-between sm:ml-6"
+                    >
+                      <div>
+                        <div
+                          class="flex justify-between sm:grid sm:grid-cols-2"
+                        >
+                          <div class="pr-6 min-w-2/3">
+                            <h3 class="text-sm">
+                              <a
+                                href="#"
+                                class="font-medium text-slate-700 hover:text-slate-800 dark:text-slate-50"
+                              >
+                                JBL Partybox 300
+                              </a>
+                            </h3>
+                            <p class="mt-1 text-sm text-slate-500">
+                              Speakers
+                            </p>
+                          </div>
+
+                          <p class="text-sm font-medium text-right">
+                            $32.00
+                          </p>
+                        </div>
+
+                        <div
+                          class="mt-4 flex items-center sm:block sm:bottom-0"
+                        >
+                          <button
+                            type="button"
+                            class="ml-0 text-sm font-medium text-primary-600 hover:text-primary-500 mt-3"
+                          >
+                            <span>X Remove</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="flex py-6 sm:py-10">
+                    <div class="flex-shrink-0">
+                      <img
+                        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi5.walmartimages.com%2Fasr%2Fb141f064-3675-4bdc-bd33-3b2aa28454cf_1.df90f5a98f7c8b3d680a9512a473906f.jpeg&f=1&nofb=1"
+                        alt="Pioneer DDJ-1000 - Dj Controller"
+                        class="w-24 h-24 rounded-lg object-center object-cover sm:w-32 sm:h-32"
+                      />
+                    </div>
+
+                    <div
+                      class="relative ml-4 flex-1 flex flex-col justify-between sm:ml-6"
+                    >
+                      <div>
+                        <div
+                          class="flex justify-between sm:grid sm:grid-cols-2"
+                        >
+                          <div class="pr-6 min-w-2/3">
+                            <h3 class="text-sm">
+                              <a
+                                href="#"
+                                class="font-medium text-slate-700 hover:text-slate-800 dark:text-slate-50"
+                              >
+                                Pioneer DDJ-1000
+                              </a>
+                            </h3>
+                            <p class="mt-1 text-sm text-slate-500">
+                              DJ Controller
+                            </p>
+                          </div>
+
+                          <p class="text-sm font-medium text-right">
+                            $32.00
+                          </p>
+                        </div>
+
+                        <div
+                          class="mt-4 flex items-center sm:block sm:bottom-0"
+                        >
+                          <button
+                            type="button"
+                            class="ml-0 text-sm font-medium text-primary-600 hover:text-primary-500 sm:mt-3"
+                          >
+                            <span>X Remove</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <!-- More products... -->
+                </ul>
+              </section>
+
+              <!-- Order summary -->
+              <section
+                aria-labelledby="summary-heading"
+                class="mt-10 lg:ml-10 md:pl-6 w-full max-w-4/12 lg:max-w-1/5"
+              >
+                <div
+                  class="bg-slate-50 dark:bg-slate-800 rounded-lg px-4 py-6 sm:p-6 lg:p-8"
+                >
+                  <h2 id="summary-heading" class="sr-only">
+                    Order summary
+                  </h2>
+
+                  <div class="flow-root">
+                    <dl
+                      class="-my-4 text-sm divide-y divide-slate-200 dark:divide-slate-500"
+                    >
+                      <div class="py-4 flex items-center justify-between">
+                        <dt class="text-slate-600">
+                          Subtotal
+                        </dt>
+                        <dd class="font-medium">
+                          $64
+                        </dd>
+                      </div>
+                      <div class="py-4 flex items-center justify-between">
+                        <dt class="text-slate-600">
+                          Bond
+                        </dt>
+                        <dd class="font-medium">
+                          $60
+                        </dd>
+                      </div>
+                      <div class="py-4 flex items-center justify-between">
+                        <dt class="text-slate-600">
+                          GST
+                        </dt>
+                        <dd class="font-medium">
+                          $6
+                        </dd>
+                      </div>
+                      <div class="py-4 flex items-center justify-between">
+                        <dt class="text-base font-medium">
+                          Order total
+                        </dt>
+                        <dd class="text-base font-medium">
+                          $130
+                        </dd>
+                      </div>
+                    </dl>
+                  </div>
+                </div>
+                <div class="mt-10">
+                  <div
+                    class="w-full bg-primary-600 border border-transparent rounded-md shadow-sm py-3 px-4 text-base font-medium text-center text-white cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-50"
+                  >
+                    Checkout
+                  </div>
+                </div>
+
+                <div class="mt-6 text-sm text-center text-slate-500">
+                  <p>
+                    or
+                    <a
+                      href="#"
+                      class="text-primary-600 font-medium hover:text-primary-500"
+                      >Continue Browsing<span aria-hidden="true">
+                        &rarr;</span
+                      ></a
+                    >
+                  </p>
+                </div>
+              </section>
+            </form>
+          </div>
+        </div>
+        <div class="">
+          <div
+            class="max-w-2xl px-4 py-16 mx-auto sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8"
+          >
+            <div class="flex items-center justify-between space-x-4">
+              <h2 class="text-lg font-medium">Customers also viewed</h2>
+              <a
+                href="#"
+                class="text-sm font-medium text-primary-600 whitespace-nowrap hover:text-primary-500"
+                >View all<span aria-hidden="true"> &rarr;</span></a
+              >
+            </div>
+            <div
+              class="grid grid-cols-1 mt-6 gap-x-8 gap-y-8 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4"
+            >
+              <div class="relative group">
+                <div
+                  class="overflow-hidden bg-slate-100 rounded-lg aspect-w-4 aspect-h-3"
+                >
+                  <img
+                    src="https://assets.website-files.com/602b03ecd6fa21ad1fd80d02/608798881a3ce0468ddcb9f1_46541promo-p-500.jpeg"
+                    alt="Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."
+                    class="object-cover object-center"
+                  />
+                  <div
+                    class="flex items-end p-4 opacity-0 group-hover:opacity-100"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="w-full px-4 py-2 text-sm font-medium text-center bg-white bg-opacity-75 rounded-md backdrop-filter backdrop-blur dark:bg-slate-800 dark:bg-opacity-75 dark:backdrop-filter dark:backdrop-blur"
+                    >
+                      View Product
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex items-center justify-between mt-4 space-x-8 text-base font-medium"
+                >
+                  <h3>
+                    <a href="#">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                      JBL Partybox 300
+                    </a>
+                  </h3>
+                  <p>$99</p>
+                </div>
+                <p class="mt-1 text-sm text-slate-500">
+                  Speakers
+                </p>
+              </div>
+
+              <!-- More products... -->
+              <div class="relative group">
+                <div
+                  class="overflow-hidden bg-slate-100 rounded-lg aspect-w-4 aspect-h-3"
+                >
+                  <img
+                    src="https://assets.website-files.com/602b03ecd6fa21ad1fd80d02/608798881a3ce0468ddcb9f1_46541promo-p-500.jpeg"
+                    alt="Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."
+                    class="object-cover object-center"
+                  />
+                  <div
+                    class="flex items-end p-4 opacity-0 group-hover:opacity-100"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="w-full px-4 py-2 text-sm font-medium text-center bg-white bg-opacity-75 rounded-md backdrop-filter backdrop-blur dark:bg-slate-800 dark:bg-opacity-75 dark:backdrop-filter dark:backdrop-blur"
+                    >
+                      View Product
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex items-center justify-between mt-4 space-x-8 text-base font-medium"
+                >
+                  <h3>
+                    <a href="#">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                      JBL Partybox 300
+                    </a>
+                  </h3>
+                  <p>$99</p>
+                </div>
+                <p class="mt-1 text-sm text-slate-500">
+                  Speakers
+                </p>
+              </div>
+              <div class="relative group">
+                <div
+                  class="overflow-hidden bg-slate-100 rounded-lg aspect-w-4 aspect-h-3"
+                >
+                  <img
+                    src="https://assets.website-files.com/602b03ecd6fa21ad1fd80d02/608798881a3ce0468ddcb9f1_46541promo-p-500.jpeg"
+                    alt="Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."
+                    class="object-cover object-center"
+                  />
+                  <div
+                    class="flex items-end p-4 opacity-0 group-hover:opacity-100"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="w-full px-4 py-2 text-sm font-medium text-center bg-white bg-opacity-75 rounded-md backdrop-filter backdrop-blur dark:bg-slate-800 dark:bg-opacity-75 dark:backdrop-filter dark:backdrop-blur"
+                    >
+                      View Product
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex items-center justify-between mt-4 space-x-8 text-base font-medium"
+                >
+                  <h3>
+                    <a href="#">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                      JBL Partybox 300
+                    </a>
+                  </h3>
+                  <p>$99</p>
+                </div>
+                <p class="mt-1 text-sm text-slate-500">
+                  Speakers
+                </p>
+              </div>
+              <div class="relative group">
+                <div
+                  class="overflow-hidden bg-slate-100 rounded-lg aspect-w-4 aspect-h-3"
+                >
+                  <img
+                    src="https://assets.website-files.com/602b03ecd6fa21ad1fd80d02/608798881a3ce0468ddcb9f1_46541promo-p-500.jpeg"
+                    alt="Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background."
+                    class="object-cover object-center"
+                  />
+                  <div
+                    class="flex items-end p-4 opacity-0 group-hover:opacity-100"
+                    aria-hidden="true"
+                  >
+                    <div
+                      class="w-full px-4 py-2 text-sm font-medium text-center bg-white bg-opacity-75 rounded-md backdrop-filter backdrop-blur dark:bg-slate-800 dark:bg-opacity-75 dark:backdrop-filter dark:backdrop-blur"
+                    >
+                      View Product
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex items-center justify-between mt-4 space-x-8 text-base font-medium"
+                >
+                  <h3>
+                    <a href="#">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                      JBL Partybox 300
+                    </a>
+                  </h3>
+                  <p>$99</p>
+                </div>
+                <p class="mt-1 text-sm text-slate-500">
+                  Speakers
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div
+      class="fixed left-auto flex items-center justify-center mx-auto right-4 bottom-1 md:bottom-1 md:right-6"
+      id="toggles"
+    >
+      <div class="relative flex items-center justify-end mx-auto space-x-2">
+        <span class="text-xs font-extralight">Light </span>
+        <div
+          class="relative w-12 h-6 my-5 rounded-full font-bold shadow-sm cursor-pointer bg-primary-500"
+        >
+          <input
+            aria-label="toggle-mode"
+            checked
+            type="checkbox"
+            name="toggle-mode"
+            id="toggle-mode"
+            class="absolute w-4 h-4 m-1 bg-white rounded-full shadow-sm appearance-none cursor-pointer focus:outline-none focus:bg-primary-500 focus:ring-1 focus:ring-offset-1 focus:ring-primary-700 checkbox"
+          />
+          <label
+            for="toggle-mode"
+            class="block w-12 h-6 overflow-hidden bg-slate-300 rounded-full cursor-pointer toggle-label dark:bg-slate-700"
+          ></label>
+        </div>
+        <!-- Code block ends -->
+        <style>
+          .checkbox:checked {
+            /* Apply class right-0*/
+            right: 0;
+          }
+
+          .checkbox:checked + .toggle-label {
+            /* Apply class bg-primary */
+            background-color: #2e86ff;
+          }
+        </style>
+        <span class="text-xs font-semibold">Dark</span>
+      </div>
+    </div>
+
+    <script>
+      const checkbox = document.querySelector("#toggle-mode");
+      const html = document.querySelector("html");
+      const toggles = document.querySelector("#toggles");
+
+      const toggleDarkMode = function () {
+        checkbox.checked
+          ? html.classList.add("dark")
+          : html.classList.remove("dark");
+      };
+
+      //calling the function directly
+
+      toggleDarkMode();
+      toggles.addEventListener("click", toggleDarkMode);
+    </script>
+  </body>
+</html>

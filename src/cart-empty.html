@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booking Cart</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+  <link rel="icon" type="img/png" sizes="16x16" href="images/favicon-16x16.png" />
+  <link rel="stylesheet" href="/build/index.css" />
+	<link id="external-css" rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap" media="all">
+	<link id="external-css" rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap" media="all">
+</head>
+
+<body class="font-sans dark:bg-slate-900 dark:text-slate-200">
+  <!-- This example requires Tailwind CSS v2.0+ -->
+  <header class="bg-primary-500 dark:bg-primary-700 shadow-lg">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Top">
+      <div
+        class="w-full py-6 flex items-center justify-between border-b border-primary-200 dark:border-primary-700 lg:border-none"
+      >
+        <div class="flex items-center">
+          <a href="#">
+            <span class="sr-only">Gecko</span>
+            <img class="h-10 w-auto" src="./img/logo-light.svg" alt="" />
+          </a>
+          <div class="hidden ml-10 space-x-8 lg:block">
+            <a
+              href="./cart-items.html"
+              class="text-base font-medium text-white hover:text-primary-50"
+              key="Categories"
+            >
+              Cart
+            </a>
+
+            <a
+              href="./cart-empty.html"
+              class="text-base font-medium text-white hover:text-primary-50"
+              key="Search"
+            >
+              Cart (empty)
+            </a>
+
+            <a
+              href="./checkout.html"
+              class="text-base font-medium text-white hover:text-primary-50"
+              key="Profile"
+            >
+              Checkout
+            </a>
+          </div>
+        </div>
+        <div class="ml-10 space-x-1.5 md:space-x-2">
+          <a
+            href="#"
+            class="inline-block bg-primary-500 py-2 px-3 border border-transparent rounded-full text-button-sm font-semibold text-white md:text-button md:px-4"
+            >Login</a
+          >
+          <a
+            href="#"
+            class="inline-block bg-white py-2 px-3 border border-transparent rounded-full text-button-sm font-semibold text-primary-600 md:text-button md:px-4"
+            >Join</a
+          >
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <div class="flex flex-col justify-between w-full px-4 pt-4 space-y-10 lg:px-10">
+    <main>
+      <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-6">
+        <div class="w-full pt-4 mx-auto lg:pt-16">
+          <h1 class="font-extrabold tracking-tight text-headline-4 md:text-headline-3">
+            Booking Cart
+          </h1>
+
+          <form class="mt-12 lg:flex">
+            <section class="w-full lg:w-2/3" aria-labelledby="cart-heading">
+              <h2 id="cart-heading" class="sr-only">
+                0 items in your booking cart
+              </h2>
+
+              <ul role="list" class="border-t border-b border-slate-200 divide-y divide-slate-200">
+                <li class="flex py-6 sm:py-10">
+                  <!-- This example requires Tailwind CSS v2.0+ -->
+                  <div class="w-full mx-auto">
+                    <h2 class="font-medium text-body-lg">Your cart is empty</h2>
+                    <p class="mt-1 text-slate-500 text-body">Start your booking by choosing from the categories below.
+                    </p>
+
+                    <ul role="list"
+                      class="grid grid-cols-1 gap-6 py-6 mt-6 border-t border-b border-slate-200 dark:border-slate-700 sm:grid-cols-2">
+                      <li class="flow-root">
+                        <div
+                          class="relative flex items-center p-2 -m-2 space-x-4 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 focus-within:ring-2 focus-within:ring-indigo-500">
+                          <div class="flex items-center justify-center flex-shrink-0 w-16 h-16 overflow-hidden bg-pink-500 rounded-lg">
+                            <!-- Heroicon name: outline/view-list -->
+                           <img src="https://gecko.rent/images/category-box-speakers.jpg" >
+                          </div>
+                          <div>
+                            <h3 class="text-sm font-medium">
+                              <a href="#" class="focus:outline-none">
+                                <span class="absolute inset-0" aria-hidden="true"></span>
+                                Speakers<span aria-hidden="true"> &rarr;</span>
+                              </a>
+                            </h3>
+                            <p class="mt-1 text-sm text-slate-500">Get the sound system you need.</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="flow-root">
+                        <div
+                          class="relative flex items-center p-2 -m-2 space-x-4 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 focus-within:ring-2 focus-within:ring-indigo-500">
+                          <div
+                            class="flex items-center justify-center flex-shrink-0 w-16 h-16 overflow-hidden bg-yellow-500 rounded-lg">
+                            <!-- Heroicon name: outline/calendar -->
+                            <img src="https://gecko.rent/images/category-box-dj-controllers.jpg" >
+
+                          </div>
+                          <div>
+                            <h3 class="text-sm font-medium">
+                              <a href="#" class="focus:outline-none">
+                                <span class="absolute inset-0" aria-hidden="true"></span>
+                                DJ Controllers<span aria-hidden="true"> &rarr;</span>
+                              </a>
+                            </h3>
+                            <p class="mt-1 text-sm text-slate-500">Ditch the aux and party like a pro.</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="flow-root">
+                        <div
+                          class="relative flex items-center p-2 -m-2 space-x-4 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 focus-within:ring-2 focus-within:ring-indigo-500">
+                          <div class="flex items-center justify-center flex-shrink-0 w-16 h-16 overflow-hidden bg-green-500 rounded-lg">
+                            <!-- Heroicon name: outline/photograph -->
+                            <img src="https://gecko.rent/images/category-box-party-lights.jpg" >
+
+                          </div>
+                          <div>
+                            <h3 class="text-sm font-medium">
+                              <a href="#" class="focus:outline-none">
+                                <span class="absolute inset-0" aria-hidden="true"></span>
+                                Party Lights<span aria-hidden="true"> &rarr;</span>
+                              </a>
+                            </h3>
+                            <p class="mt-1 text-sm text-slate-500">Set the mood with lighting and lasers.</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="flow-root">
+                        <div
+                          class="relative flex items-center p-2 -m-2 space-x-4 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 focus-within:ring-2 focus-within:ring-indigo-500">
+                          <div class="flex items-center justify-center flex-shrink-0 w-16 h-16 overflow-hidden bg-blue-500 rounded-lg">
+                            <!-- Heroicon name: outline/view-boards -->
+                            <img src="https://gecko.rent/images/category-box-chairs.jpg" >
+
+                          </div>
+                          <div>
+                            <h3 class="text-sm font-medium">
+                              <a href="#" class="focus:outline-none">
+                                <span class="absolute inset-0" aria-hidden="true"></span>
+                                Chairs<span aria-hidden="true"> &rarr;</span>
+                              </a>
+                            </h3>
+                            <p class="mt-1 text-sm text-slate-500">Get set with proper seating for your event.</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="flow-root">
+                        <div
+                          class="relative flex items-center p-2 -m-2 space-x-4 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 focus-within:ring-2 focus-within:ring-indigo-500">
+                          <div
+                            class="flex items-center justify-center flex-shrink-0 w-16 h-16 overflow-hidden bg-indigo-500 rounded-lg">
+                            <!-- Heroicon name: outline/table -->
+                            <img src="https://gecko.rent/images/category-box-microphone.jpg" >
+
+                          </div>
+                          <div>
+                            <h3 class="text-sm font-medium">
+                              <a href="#" class="focus:outline-none">
+                                <span class="absolute inset-0" aria-hidden="true"></span>
+                                Microphones<span aria-hidden="true"> &rarr;</span>
+                              </a>
+                            </h3>
+                            <p class="mt-1 text-sm text-slate-500">If you sing or have something to say.</p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="flow-root">
+                        <div
+                          class="relative flex items-center p-2 -m-2 space-x-4 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 focus-within:ring-2 focus-within:ring-indigo-500">
+                          <div
+                            class="flex items-center justify-center flex-shrink-0 w-16 h-16 overflow-hidden bg-purple-500 rounded-lg">
+                            <!-- Heroicon name: outline/clock -->
+                            <img src="https://gecko.rent/images/category-box-smoke-machine.jpg" >
+
+                          </div>
+                          <div>
+                            <h3 class="text-sm font-medium">
+                              <a href="#" class="focus:outline-none">
+                                <span class="absolute inset-0" aria-hidden="true"></span>
+                                Smoke Machines<span aria-hidden="true"> &rarr;</span>
+                              </a>
+                            </h3>
+                            <p class="mt-1 text-sm text-slate-500">Add something to the atmosphere.</p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="flex mt-6">
+                      <a href="#" class="text-sm font-medium text-primary-600 hover:text-sky-500">Or search for
+                        something else<span aria-hidden="true"> &rarr;</span></a>
+                    </div>
+                  </div>
+
+                </li>
+
+
+              </ul>
+            </section>
+
+            <!-- Order summary -->
+            <section aria-labelledby="summary-heading" class="w-full mt-10 lg:ml-4 md:pl-6 lg:w-1/3">
+              <div class="px-4 py-6 rounded-lg bg-slate-50 dark:bg-slate-800 sm:p-6 lg:p-8">
+                <h2 id="summary-heading" class="sr-only">
+                  Order summary
+                </h2>
+
+                <div class="flow-root">
+                  <dl class="-my-4 text-sm divide-y divide-slate-200">
+                    <div class="flex items-center justify-between py-4">
+                      <dt class="text-slate-600">
+                        Subtotal
+                      </dt>
+                      <dd class="font-medium">
+                        -
+                      </dd>
+                    </div>
+                    <div class="flex items-center justify-between py-4">
+                      <dt class="text-slate-600">
+                        Bond
+                      </dt>
+                      <dd class="font-medium">
+                        -
+                      </dd>
+                    </div>
+
+                    <div class="flex items-center justify-between py-4">
+                      <dt class="text-base font-medium">
+                        Order total
+                      </dt>
+                      <dd class="text-base font-medium">
+                        -
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+              <div class="mt-10">
+                <div
+                  class="w-full px-4 py-3 text-base font-medium text-center text-white bg-slate-600 border border-transparent rounded-md shadow-sm cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-50">
+                  Checkout
+                </div>
+              </div>
+
+              <div class="mt-6 text-sm text-center text-slate-500">
+                <p>
+                  or
+                  <a href="#" class="font-medium text-primary-600 hover:text-primary-500">Continue Browsing<span
+                      aria-hidden="true">
+                      &rarr;</span></a>
+                </p>
+              </div>
+            </section>
+          </form>
+        </div>
+      </div>
+<!--
+  This example requires Tailwind CSS v2.0+ 
+  
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/aspect-ratio'),
+    ],
+  }
+  ```
+-->
+<div class="">
+  <div class="max-w-2xl px-4 py-16 mx-auto sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
+    <div class="flex items-center justify-between space-x-4">
+      <h2 class="text-lg font-medium">Customers also viewed</h2>
+      <a href="#" class="text-sm font-medium text-primary-600 whitespace-nowrap hover:text-primary-500">View all<span aria-hidden="true"> &rarr;</span></a>
+    </div>
+    <div class="grid grid-cols-1 mt-6 gap-x-8 gap-y-8 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
+      <div class="relative group">
+        <div class="overflow-hidden bg-slate-100 rounded-lg aspect-w-4 aspect-h-3">
+          <img src="https://assets.website-files.com/602b03ecd6fa21ad1fd80d02/608798881a3ce0468ddcb9f1_46541promo-p-500.jpeg" alt="Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background." class="object-cover object-center">
+          <div class="flex items-end p-4 opacity-0 group-hover:opacity-100" aria-hidden="true">
+            <div class="w-full px-4 py-2 text-sm font-medium text-center bg-white bg-opacity-75 rounded-md backdrop-filter backdrop-blur">
+              View Product
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-between mt-4 space-x-8 text-base font-medium ">
+          <h3>
+            <a href="#">
+              <span aria-hidden="true" class="absolute inset-0"></span>
+              JBL Partybox 300
+            </a>
+          </h3>
+          <p>$99</p>
+        </div>
+        <p class="mt-1 text-sm text-slate-500">
+          Speakers
+        </p>
+      </div>
+
+      <!-- More products... -->
+      <div class="relative group">
+        <div class="overflow-hidden bg-slate-100 rounded-lg aspect-w-4 aspect-h-3">
+          <img src="https://assets.website-files.com/602b03ecd6fa21ad1fd80d02/608798881a3ce0468ddcb9f1_46541promo-p-500.jpeg" alt="Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background." class="object-cover object-center">
+          <div class="flex items-end p-4 opacity-0 group-hover:opacity-100" aria-hidden="true">
+            <div class="w-full px-4 py-2 text-sm font-medium text-center bg-white bg-opacity-75 rounded-md backdrop-filter backdrop-blur">
+              View Product
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-between mt-4 space-x-8 text-base font-medium ">
+          <h3>
+            <a href="#">
+              <span aria-hidden="true" class="absolute inset-0"></span>
+              JBL Partybox 300
+            </a>
+          </h3>
+          <p>$99</p>
+        </div>
+        <p class="mt-1 text-sm text-slate-500">
+          Speakers
+        </p>
+      </div>
+      <div class="relative group">
+        <div class="overflow-hidden bg-slate-100 rounded-lg aspect-w-4 aspect-h-3">
+          <img src="https://assets.website-files.com/602b03ecd6fa21ad1fd80d02/608798881a3ce0468ddcb9f1_46541promo-p-500.jpeg" alt="Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background." class="object-cover object-center">
+          <div class="flex items-end p-4 opacity-0 group-hover:opacity-100" aria-hidden="true">
+            <div class="w-full px-4 py-2 text-sm font-medium text-center bg-white bg-opacity-75 rounded-md backdrop-filter backdrop-blur">
+              View Product
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-between mt-4 space-x-8 text-base font-medium ">
+          <h3>
+            <a href="#">
+              <span aria-hidden="true" class="absolute inset-0"></span>
+              JBL Partybox 300
+            </a>
+          </h3>
+          <p>$99</p>
+        </div>
+        <p class="mt-1 text-sm text-slate-500">
+          Speakers
+        </p>
+      </div>
+      <div class="relative group">
+        <div class="overflow-hidden bg-slate-100 rounded-lg aspect-w-4 aspect-h-3">
+          <img src="https://assets.website-files.com/602b03ecd6fa21ad1fd80d02/608798881a3ce0468ddcb9f1_46541promo-p-500.jpeg" alt="Payment application dashboard screenshot with transaction table, financial highlights, and main clients on colorful purple background." class="object-cover object-center">
+          <div class="flex items-end p-4 opacity-0 group-hover:opacity-100" aria-hidden="true">
+            <div class="w-full px-4 py-2 text-sm font-medium text-center bg-white bg-opacity-75 rounded-md backdrop-filter backdrop-blur">
+              View Product
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-between mt-4 space-x-8 text-base font-medium ">
+          <h3>
+            <a href="#">
+              <span aria-hidden="true" class="absolute inset-0"></span>
+              JBL Partybox 300
+            </a>
+          </h3>
+          <p>$99</p>
+        </div>
+        <p class="mt-1 text-sm text-slate-500">
+          Speakers
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </main>
+
+    <footer aria-labelledby="footer-heading" class="">
+      <h2 id="footer-heading" class="sr-only">Footer</h2>
+      <div class="mx-auto mt-10 max-w-7xl sm:px-6 lg:px-8">
+        <div class="py-20 border-t border-slate-200">
+
+          <!-- Newsletter section -->
+          <div class="flex flex-col items-center mt-12 md:mt-0">
+            <h3 class="mb-4 font-bold text-center text-headline-4">
+              Geck the latest news <br />
+              about Gecko!
+            </h3>
+
+            <form class="flex w-full mt-2 sm:max-w-md">
+              <label for="email-address" class="sr-only">Email address</label>
+              <input id="email-address" type="text" autocomplete="email" required
+                class="w-full min-w-0 px-4 py-2 text-base placeholder-slate-500 bg-white border border-slate-300 rounded-md shadow-sm appearance-none dark:bg-slate-800 focus:outline-none focus:border-primary-500 focus:ring-1 focus:ring-primary-500" />
+              <div class="flex-shrink-0 ml-4">
+                <button type="submit"
+                  class="flex items-center justify-center w-full px-4 py-2 text-base font-semibold text-white border border-transparent rounded-md shadow-sm bg-primary-500 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
+                  Subscribe
+                </button>
+              </div>
+            </form>
+            <p class="mt-6 text-sm text-slate-500">
+              Subscribe to our newsletter for the latest updates.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-10 text-center border-t border-slate-100">
+        <p class="text-sm text-slate-500">
+          &copy; 2021 Gecko. All rights reserved.
+        </p>
+      </div>
+  </div>
+  </footer>
+
+  </div>
+  <div class="fixed left-auto flex items-center justify-center mx-auto right-4 bottom-1 md:bottom-1 md:right-6"
+    id="toggles">
+    <div class="relative flex items-center justify-end mx-auto space-x-2">
+      <span class="text-xs font-extralight">Light </span>
+      <div class="relative w-12 h-6 my-5 font-bold rounded-full shadow-sm cursor-pointer bg-primary-500">
+        <input aria-label="toggle-mode" checked type="checkbox" name="toggle-mode" id="toggle-mode"
+          class="absolute w-4 h-4 m-1 bg-white rounded-full shadow-sm appearance-none cursor-pointer focus:outline-none focus:bg-primary-500 focus:ring-1 focus:ring-offset-1 focus:ring-primary-700 checkbox" />
+        <label for="toggle-mode"
+          class="block w-12 h-6 overflow-hidden bg-slate-300 rounded-full cursor-pointer toggle-label dark:bg-slate-700"></label>
+      </div>
+      <!-- Code block ends -->
+      <style>
+        .checkbox:checked {
+          /* Apply class right-0*/
+          right: 0;
+        }
+
+        .checkbox:checked+.toggle-label {
+          /* Apply class bg-primary */
+          background-color: #2e86ff;
+        }
+      </style>
+      <span class="text-xs font-semibold">Dark</span>
+    </div>
+  </div>
+
+  <script>
+    const checkbox = document.querySelector("#toggle-mode");
+    const html = document.querySelector("html");
+    const toggles = document.querySelector("#toggles");
+
+    const toggleDarkMode = function () {
+      checkbox.checked
+        ? html.classList.add("dark")
+        : html.classList.remove("dark");
+    };
+
+    //calling the function directly
+
+    toggleDarkMode();
+    toggles.addEventListener("click", toggleDarkMode);
+  </script>
+</body>
+
+</html>

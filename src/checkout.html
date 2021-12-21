@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booking Cart</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+  <link rel="icon" type="img/png" sizes="16x16" href="images/favicon-16x16.png" />
+  <link rel="stylesheet" href="/build/index.css" />
+	<link id="external-css" rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap" media="all">
+	<link id="external-css" rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap" media="all">
+</head>
+
+<body class="font-sans dark:bg-slate-900 dark:text-slate-200">
+  <!-- This example requires Tailwind CSS v2.0+ -->
+  <header class="absolute z-50 w-full bg-primary dark:bg-primary-700 shadow-lg">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Top">
+      <div
+        class="w-full py-6 flex items-center justify-between border-b border-primary-200 dark:border-primary-700 lg:border-none"
+      >
+        <div class="flex items-center">
+          <a href="#">
+            <span class="sr-only">Gecko</span>
+            <img class="h-10 w-auto" src="./img/logo-light.svg" alt="" />
+          </a>
+          <div class="hidden ml-10 space-x-8 lg:block">
+            <a
+              href="./cart-items.html"
+              class="text-base font-medium text-white hover:text-primary-50"
+              key="Categories"
+            >
+              Cart
+            </a>
+
+            <a
+              href="./cart-empty.html"
+              class="text-base font-medium text-white hover:text-primary-50"
+              key="Search"
+            >
+              Cart (empty)
+            </a>
+
+            <a
+              href="./checkout.html"
+              class="text-base font-medium text-white hover:text-primary-50"
+              key="Profile"
+            >
+              Checkout
+            </a>
+          </div>
+        </div>
+        <div class="ml-10 space-x-1.5 md:space-x-2">
+          <a
+            href="#"
+            class="inline-block bg-primary-500 py-2 px-3 border border-transparent rounded-full text-button-sm font-semibold text-white md:text-button md:px-4"
+            >Login</a
+          >
+          <a
+            href="#"
+            class="inline-block bg-white py-2 px-3 border border-transparent rounded-full text-button-sm font-semibold text-primary-600 md:text-button md:px-4"
+            >Join</a
+          >
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <div class="flex flex-col justify-between w-full px-4 space-y-10 lg:px-10">
+    <main>
+      <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-6">
+        <div class="w-full pt-8 mx-auto lg:pt-20">
+          
+
+        </div>
+      </div>
+      
+    
+    <div class="">
+      <!-- Background color split screen for large screens -->
+      <div class="hidden lg:block fixed top-0 left-0 w-1/2 h-full bg-white dark:bg-slate-900" aria-hidden="true"></div>
+      <div class="hidden lg:block fixed top-0 right-0 w-1/2 h-full rounded-2xl dark:bg-slate-800" aria-hidden="true"></div>
+    
+      <div class="relative grid grid-cols-1 gap-x-16 max-w-7xl mx-auto lg:px-8 lg:grid-cols-2 lg:pt-16">
+        <h1 class="sr-only">Checkout</h1>
+    
+        <section aria-labelledby="summary-heading" class="text-slate-700 py-12 rounded-lg overflow-hidden md:px-10 lg:max-w-lg lg:w-full lg:mx-auto lg:px-0 lg:pt-0 lg:pb-24 lg:bg-transparent lg:row-start-1 lg:col-start-2 dark:text-slate-300 dark:bg-slate-800">
+          <div class="max-w-2xl mx-auto px-4 pt-4 lg:max-w-none lg:px-0">
+            <h2 id="summary-heading" class="sr-only">Order summary</h2>
+    
+            <dl>
+              <dt class="text-sm font-medium">Amount due</dt>
+              <dd class="mt-1 text-3xl font-extrabold text-slate-900 dark:text-white">$232.00</dd>
+            </dl>
+    
+            <ul role="list" class="text-sm font-medium divide-y divide-slate-900 divide-opacity-10 dark:divide-white dark:divide-opacity-10 ">
+              <li class="flex items-start py-6 space-x-4">
+                <img src="https://assets.website-files.com/602b03ecd6fa21ad1fd80d02/608798881a3ce0468ddcb9f1_46541promo-p-500.jpeg" alt="JBL Partybox 300 - Speakers." class="flex-none w-20 h-20 rounded-md object-center object-cover shadow-lg">
+                <div class="flex-auto space-y-1">
+                  <h3 class="">JBL Partybox 300</h3>
+                  <p>Speakers</p>
+                  <p>Bond: $45</p>
+                </div>
+                <p class="flex-none text-base font-medium">$210.00</p>
+              </li>
+    
+              <!-- More products... -->
+              <li class="flex items-start py-6 space-x-4">
+                <img src="https://assets.website-files.com/602b03ecd6fa21ad1fd80d02/608798881a3ce0468ddcb9f1_46541promo-p-500.jpeg" alt="JBL Partybox 300 - Speakers." class="flex-none w-20 h-20 rounded-md object-center object-cover shadow-lg">
+                <div class="flex-auto space-y-1">
+                  <h3 class="">JBL Partybox 300</h3>
+                  <p>Speakers</p>
+                </div>
+                <p class="flex-none text-base font-medium">$210.00</p>
+              </li>
+            </ul>
+    
+            <dl class="text-sm font-medium space-y-6 border-t border-slate-900 border-opacity-10 dark:border-white dark:border-opacity-10 pt-6">
+              <div class="flex items-center justify-between">
+                <dt>Subtotal</dt>
+                <dd>$570.00</dd>
+              </div>
+    
+              <div class="flex items-center justify-between">
+                <dt>Bond</dt>
+                <dd>$47.60</dd>
+              </div>
+    
+              <div class="flex items-center justify-between border-t border-slate-900 border-opacity-10 dark:border-white dark:border-opacity-10 pt-6">
+                <dt class="text-base">Total</dt>
+                <dd class="text-base">$642.60</dd>
+              </div>
+            </dl>
+          </div>
+        </section>
+    
+        <section aria-labelledby="payment-and-shipping-heading" class="py-16 lg:max-w-lg lg:w-full lg:mx-auto lg:pt-0 lg:pb-24 lg:row-start-1 lg:col-start-1">
+          <h2 id="payment-and-shipping-heading" class="sr-only">Payment details</h2>
+    
+          <form>
+            <div class="max-w-2xl mx-auto px-4 lg:max-w-none lg:px-0">
+              <div>
+                <h3 id="contact-info-heading" class="text-lg font-medium">Contact information</h3>
+    
+                <div class="mt-6">
+                  <label for="phone-number" class="block text-sm font-medium text-slate-700  dark:text-slate-400">Mobile Number</label>
+                  <div class="mt-1">
+                    <input type="tel" id="phone-number" name="phone-number" autocomplete="tel" class="text-caption-lg bg-primary-50 border-box text-slate-900 outline-none focus:text-grey-500 sm:text-caption-lg md:text-caption-lg rounded-lg border border-2 border-primary-200 dark:border-grey-300 focus:border-blue-500 focus:ring-blue-500 focus:ring-2 focus:bg-slate-50 block w-full pl-4 py-3 mr-px dark:border-grey-800 dark:focus:border-blue-500 dark:bg-slate-900 dark:focus:bg-slate-900 dark:text-slate-400 dark:focus:text-slate-50 focus:border-transparent">
+                  </div>
+                </div>
+              </div>
+    
+              <div class="mt-10">
+                <h3 class="text-lg font-medium">Payment details</h3>
+    
+                <div class="mt-6 grid grid-cols-3 sm:grid-cols-4 gap-y-6 gap-x-4">
+                  <div class="col-span-3 sm:col-span-4">
+                    <label for="card-number" class="block text-sm font-medium text-slate-700  dark:text-slate-400">Card number</label>
+                    <div class="mt-1">
+                      <input type="text" id="card-number" name="card-number" autocomplete="cc-number" class="text-caption-lg bg-primary-50 border-box text-slate-900 outline-none focus:text-grey-500 sm:text-caption-lg md:text-caption-lg rounded-lg border border-2  border-primary-200 dark:border-grey-300 focus:border-blue-500 focus:ring-blue-500 focus:ring-2 focus:bg-slate-50 block w-full pl-4 py-3 mr-px dark:border-grey-800 dark:focus:border-blue-500 dark:bg-slate-900 dark:focus:bg-slate-900 dark:text-slate-400 dark:focus:text-slate-50 focus:border-transparent">
+                    </div>
+                  </div>
+    
+                  <div class="col-span-2 sm:col-span-3">
+                    <label for="expiration-date" class="block text-sm font-medium text-slate-700  dark:text-slate-400">Expiration date (MM/YY)</label>
+                    <div class="mt-1">
+                      <input type="text" name="expiration-date" id="expiration-date" autocomplete="cc-exp" class="text-caption-lg bg-primary-50 border-box text-slate-900 outline-none focus:text-grey-500 sm:text-caption-lg md:text-caption-lg rounded-lg border border-2  border-primary-200 dark:border-grey-300 focus:border-blue-500 focus:ring-blue-500 focus:ring-2 focus:bg-slate-50 block w-full pl-4 py-3 mr-px dark:border-grey-800 dark:focus:border-blue-500 dark:bg-slate-900 dark:focus:bg-slate-900 dark:text-slate-400 dark:focus:text-slate-50 focus:border-transparent">
+                    </div>
+                  </div>
+    
+                  <div>
+                    <label for="cvc" class="block text-sm font-medium text-slate-700  dark:text-slate-400">CVC</label>
+                    <div class="mt-1">
+                      <input type="text" name="cvc" id="cvc" autocomplete="csc" class="text-caption-lg bg-primary-50 border-box text-slate-900 outline-none focus:text-grey-500 sm:text-caption-lg md:text-caption-lg rounded-lg border border-2  border-primary-200 dark:border-grey-300 focus:border-blue-500 focus:ring-blue-500 focus:ring-2 focus:bg-slate-50 block w-full pl-4 py-3 mr-px dark:border-grey-800 dark:focus:border-blue-500 dark:bg-slate-900 dark:focus:bg-slate-900 dark:text-slate-400 dark:focus:text-slate-50 focus:border-transparent">
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="mt-10">
+                <h3 class="text-lg font-medium">Billing address</h3>
+    
+                <div class="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-3">
+                  <div class="sm:col-span-3">
+                    <label for="address" class="block text-sm font-medium text-slate-700  dark:text-slate-400">Address</label>
+                    <div class="mt-1">
+                      <input type="text" id="address" name="address" autocomplete="street-address" class="text-caption-lg bg-primary-50 border-box text-slate-900 outline-none focus:text-grey-500 sm:text-caption-lg md:text-caption-lg rounded-lg border border-2  border-primary-200 dark:border-grey-300 focus:border-blue-500 focus:ring-blue-500 focus:ring-2 focus:bg-slate-50 block w-full pl-4 py-3 mr-px dark:border-grey-800 dark:focus:border-blue-500 dark:bg-slate-900 dark:focus:bg-slate-900 dark:text-slate-400 dark:focus:text-slate-50 focus:border-transparent">
+                    </div>
+                  </div>
+    
+                  <div>
+                    <label for="city" class="block text-sm font-medium text-slate-700  dark:text-slate-400">City</label>
+                    <div class="mt-1">
+                      <input type="text" id="city" name="city" autocomplete="address-level2" class="text-caption-lg bg-primary-50 border-box text-slate-900 outline-none focus:text-grey-500 sm:text-caption-lg md:text-caption-lg rounded-lg border border-2  border-primary-200 dark:border-grey-300 focus:border-blue-500 focus:ring-blue-500 focus:ring-2 focus:bg-slate-50 block w-full pl-4 py-3 mr-px dark:border-grey-800 dark:focus:border-blue-500 dark:bg-slate-900 dark:focus:bg-slate-900 dark:text-slate-400 dark:focus:text-slate-50 focus:border-transparent"">
+                    </div>
+                  </div>
+    
+                  <div>
+                    <label for="region" class="block text-sm font-medium text-slate-700  dark:text-slate-400">State / Province</label>
+                    <div class="mt-1">
+                      <input type="text" id="region" name="region" autocomplete="address-level1" class="text-caption-lg bg-primary-50 border-box text-slate-900 outline-none focus:text-grey-500 sm:text-caption-lg md:text-caption-lg rounded-lg border border-2  border-primary-200 dark:border-grey-300 focus:border-blue-500 focus:ring-blue-500 focus:ring-2 focus:bg-slate-50 block w-full pl-4 py-3 mr-px dark:border-grey-800 dark:focus:border-blue-500 dark:bg-slate-900 dark:focus:bg-slate-900 dark:text-slate-400 dark:focus:text-slate-50 focus:border-transparent">
+                    </div>
+                  </div>
+    
+                  <div>
+                    <label for="postal-code" class="block text-sm font-medium text-slate-700 dark:text-slate-400">Postal code</label>
+                    <div class="mt-1">
+                      <input type="text" id="postal-code" name="postal-code" autocomplete="postal-code" class="text-caption-lg bg-primary-50 border-box text-slate-900 outline-none focus:text-grey-500 sm:text-caption-lg md:text-caption-lg rounded-lg border border-2  border-primary-200 dark:border-grey-300 focus:border-blue-500 focus:ring-blue-500 focus:ring-2 focus:bg-slate-50 block w-full pl-4 py-3 mr-px dark:border-grey-800 dark:focus:border-blue-500 dark:bg-slate-900 dark:focus:bg-slate-900 dark:text-slate-400 dark:focus:text-slate-50 focus:border-transparent">
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="mt-10 flex justify-end pt-6 border-t border-slate-200">
+                <button type="submit" class="bg-primary-500 border border-transparent rounded-md shadow-sm py-2 px-4 text-sm font-medium text-white hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-50 focus:ring-primary-500">Pay now</button>
+              </div>
+            </div>
+          </form>
+        </section>
+      </main>
+      </div>
+    </div>
+
+  </div>
+  <div class="fixed left-auto flex items-center justify-center mx-auto right-4 bottom-1 md:bottom-1 md:right-6"
+    id="toggles">
+    <div class="relative flex items-center justify-end mx-auto space-x-2">
+      <span class="text-xs font-extralight">Light </span>
+      <div class="relative w-12 h-6 my-5 font-bold rounded-full shadow-sm cursor-pointer bg-primary-500">
+        <input aria-label="toggle-mode" checked type="checkbox" name="toggle-mode" id="toggle-mode"
+          class="absolute w-4 h-4 m-1 bg-white rounded-full shadow-sm appearance-none cursor-pointer focus:outline-none focus:bg-primary-500 focus:ring-1 focus:ring-offset-1 focus:ring-primary-700 checkbox" />
+        <label for="toggle-mode"
+          class="block w-12 h-6 overflow-hidden bg-slate-300 rounded-full cursor-pointer toggle-label dark:bg-slate-700"></label>
+      </div>
+      <!-- Code block ends -->
+      <style>
+        .checkbox:checked {
+          /* Apply class right-0*/
+          right: 0;
+        }
+
+        .checkbox:checked+.toggle-label {
+          /* Apply class bg-primary */
+          background-color: #2e86ff;
+        }
+      </style>
+      <span class="text-xs font-semibold">Dark</span>
+    </div>
+  </div>
+
+  <script>
+    const checkbox = document.querySelector("#toggle-mode");
+    const html = document.querySelector("html");
+    const toggles = document.querySelector("#toggles");
+
+    const toggleDarkMode = function () {
+      checkbox.checked
+        ? html.classList.add("dark")
+        : html.classList.remove("dark");
+    };
+
+    //calling the function directly
+
+    toggleDarkMode();
+    toggles.addEventListener("click", toggleDarkMode);
+  </script>
+</body>
+
+</html>
